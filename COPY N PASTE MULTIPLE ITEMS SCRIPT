@@ -1,0 +1,56 @@
+;*****COPY N PASTE MULTIPLE ITEMS SCRIPT*******
+#Persistent
+CopiedItems := []
+
+; F1  to copy the selected text
+F1::
+    Send, ^a
+    Clipboard := ""
+    Send, ^c
+    ClipWait, 0.5 ; Wait for clipboard to contain data for up to 0.5 seconds
+    if !ErrorLevel
+    {
+        ; Add the copied item to the array
+        CopiedItems.Push(Clipboard)
+
+        ; Increase the count of copied items
+        CopiedItemsCount := CopiedItems.Length()
+
+        ; Display count in tooltip
+        Tooltip, Copied %CopiedItemsCount%
+        SetTimer, RemoveTooltip, 2000
+    }
+    return
+
+; F2  to paste the copied text
+F2:: 
+    if (CopiedItems.Length() > 0)
+    {
+        ; Get the oldest copied item
+        PastedItem := CopiedItems[1]
+        Clipboard := PastedItem
+	clipboard := clipboard
+        Send, ^v
+
+
+        ; Decrease the count of copied items
+        CopiedItems.RemoveAt(1)
+
+        ; Update count of copied items
+        CopiedItemsCount := CopiedItems.Length()
+
+        ; Display count in tooltip
+        Tooltip, Pasted %CopiedItemsCount%
+        SetTimer, RemoveTooltip, 2000
+    }
+    else
+    {
+        Tooltip, No items to paste.
+        SetTimer, RemoveTooltip, 2000
+    }
+    return
+
+RemoveTooltip:
+    Tooltip
+    return
+;=======
