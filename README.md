@@ -1,1 +1,1 @@
-# -Productivity-Copy-paste-with-autohotkey
+# Productivity-Copy-paste-with-autohotkey
