@@ -23,7 +23,7 @@ Each time you paste, the count will decrease.
 ### Example Use Case:
 Imagine you're compiling a report with various snippets from different sources. Instead of going back and forth, just copy each snippet in one go, and then paste them seamlessly when needed.
 
-### Demo:
+### Demo: https://youtu.be/l-6i0F9kIEA?si=UFzdWJfQnyI1cFbB
 <a href="https://www.youtube.com/watch?v=l-6i0F9kIEA&ab_channel=Tengchan">
     <img src="https://img.youtube.com/vi/l-6i0F9kIEA/maxresdefault.jpg" alt="Thumbnail">
 </a>
