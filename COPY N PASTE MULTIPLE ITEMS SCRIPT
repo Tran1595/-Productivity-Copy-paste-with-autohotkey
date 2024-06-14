@@ -4,7 +4,7 @@ CopiedItems := []
 
 ; F1  to copy the selected text
 F1::
-    Send, ^a
+    Send, ^a     ; delete this line of code to turn off the select all feature
     Clipboard := ""
     Send, ^c
     ClipWait, 0.5 ; Wait for clipboard to contain data for up to 0.5 seconds
