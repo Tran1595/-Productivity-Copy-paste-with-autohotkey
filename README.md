@@ -1,8 +1,6 @@
 # Autohokey copy and paste for data entry
 - This script not only allows you to copy multiple items at once but also keeps track of how many you've copied, displaying the count in a handy tooltip.
 - Note: You can replace the hotkey to your preferred keys, see the video.
-- Copy and paste the script into Notepad and load it with Autohotkey to use: <a href="https://github.com/Tran1595/autohokey-copypaste-for-data-entry/blob/main/COPY%20N%20PASTE%20MULTIPLE%20ITEMS%20SCRIPT">Script here
-</a>
 
 ### Key Features:
 Copy multiple items and keep track of them effortlessly.
